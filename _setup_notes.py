@@ -8,7 +8,7 @@
 
 issues
  - multiple calendars
- - time zone - can return data in any timezone, need way to discover local TZ for user
+ - time zone - can return data in any timezone, calendar timezone through calendar_list
  - 24h events
  - holidays (24h events)
 
