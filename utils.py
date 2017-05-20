@@ -1,23 +1,20 @@
 
 import datetime
+from pprint import pprint
 
-from googleapiclient import discovery
-import httplib2
+# from googleapiclient import discovery
+# import httplib2
 
-from _credentials import get_credentials
+from _credentials import service
+from iso_to_python_converter import iso_to_python_converter as i_to_py
 
 NOW = datetime.datetime.utcnow().isoformat() + 'Z' # 'Z' indicates UTC time
 
 def get_events(start=NOW, end=None, max_results=2500):
     '''  returns list of events for given start & end time  '''
-    # TODO - END TIME
-    credentials = get_credentials()
-    http = credentials.authorize(httplib2.Http())
-    service = discovery.build('calendar', 'v3', http=http)
-
     events_result = service.events().list(
         # REF: https://developers.google.com/google-apps/calendar/v3/reference/events/list
-        calendarId='primary',
+        calendarId='primary', # use 'primary' to get their primary cal
         timeMin=start,
         timeMax=end,
         maxResults=max_results,
@@ -27,7 +24,7 @@ def get_events(start=NOW, end=None, max_results=2500):
         ).execute()
 
     events = events_result.get('items', [])
-    print('Getting the upcoming %d events' %len(events))
+    print('Getting upcoming %d events' %len(events))
     return events #[{event_obj},{event_obj},{event_obj}]
 #
 
@@ -37,20 +34,24 @@ def get_things_from_event(event):
     # get event date-time, if None get event date (24h events)
     start = event['start'].get('dateTime', event['start'].get('date'))
     end = event['end'].get('dateTime', event['end'].get('date'))
+    duration = i_to_py(end) - i_to_py(start)
     # metadata
-    summary = event['summary']
-    desc = event['description']
-    location = event['location']
-    email_creator = event['creator']['email']
+    summary = event.get('summary', '')
+    desc = event.get('description', '')
+    location = event.get('location', '')
+    email_creator = event.get('creator', {}).get('email', '')
 
-    print(start, end)
-    print(summary, desc)
-    print(location)
+    print("start: %s end: %s " %(start, end))
+    print('duration: %s' %duration)
+    print("summary: %s " %summary) 
+    print("descr: %s" %desc)
+    print('location: %s' %location) 
     print(email_creator)
 
 
 
 if __name__ == '__main__':
-    A = get_events(max_results=10)
-    get_things_from_event(A[0])
+    events = get_events(max_results=250)
+    
+    output = [get_things_from_event(event) for event in events]
     
