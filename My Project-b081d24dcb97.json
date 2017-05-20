@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "banded-access-168201",
+  "private_key_id": "b081d24dcb97124a246037df5ca7f516a97761cc",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCzIDUVCFUFx9Fz\nYx4JtLxxUNgM8w0Dt7zyv9HX/VX613sPhUVJoG7ovdCFo6+OThznHv2PGf8MFACH\n1KwV7w+uswRgxVhzo17xOKqjBpy37vdbfsHMUvlDYH9JnDaHxlI/HlEtQl8yb9g8\n6eNgxc9XuJJ6JaZtabY/qrbYxFuDBPdeWLlLpAkzl57OztlIMloSkZKsLgcg7TZX\n4bh/3zbhYE/9w9a7AlxZS27jelnoUjSL+qSaPbv8DqtsaCmr054eRWSYnxGulMoe\n2MsIhDRZfGKh+25tTMpzqwJyyLLSha1Xy0NDEU1DMuRh7GBV2qLH4RBPvTcO9h8m\nAqNBCUZvAgMBAAECggEADNKAFw0KI26xNqyZ/VrgZ5vAY3W28RTjFynJAfuV/u2t\nPVt7LfD1XEuEh9R2rPdr4gizYN3p0znPuE/U47SoFdRyh0gJJvn2W8q3i3gqzSkN\nFt6x5u6EZLpqUi22/GAjcHY7AsQVOXCNKGS1TJUywu/cHsp49kZF1mfh5kFw3yXj\nvzFCBB+VoIluH/IRO+CavKH7VcJDf/Z3P88Z79cu4uNm/wVy7weUPJKCNDUhEIZt\nFA8HTFVUi9K2ATtJ1o6i8ZBcacxGWoLKIIppWVwKMyO3hAxJINzsyTDCa9IAD9jf\n7p25QsU9wxOvo/PQ6UVcT4DtNatCgAVY9u80NgBE0QKBgQDs4sxyGUuwsqcpf0D5\n4bo755pZh3ORlxB/l/fI+4WvEZkq2aktsJeUtQjX3WQniWAV1yZfiHwhFK3t6/hd\ni/a+xgQwz5UAQpdPeSUBCGlI6Mm/dxku0RLCvRWV13eo/kI8GkQDMyeO43FGsPID\nz9CUHwv+CeJ4x1MkDwb8KsXg8QKBgQDBlEt3R0yyqsIHCfI/iD7Ry938nPt6/9vZ\n3F0GWK60uTsHY4ADkm4M5d8cnQ5GXK6CNsTL3jbWRadfehGhDlj1AjchTK62C/I5\nkQeIByf1XhKM6okr0iNWbwqHZVG7fhz7sYzSsIxJbnXGYD1q/DA5UXAYk2pJ+k9E\nZLfp4RedXwKBgBkir6LjwD5NlqM2l4RsSUCWALDDSKYIK33+eBJhbfv3mBMN6X+p\nn0vuMbQGD9yKHSH0JGQ6rUEtWo9GXKJAebwgcs1jGWJfroKGTkDfzZwo509jqc5n\n7N+xBJtTs6TA5fJOryzPvsDQrXJc0DFLWcx9xt372oYKUG4hEhKrzzdhAoGASkrf\nq6dxiCCA1rK6hieD9ICJcanN2ibX+YTZLtZaNoHgZbWKK9TG56xRNGoSUG7Birf6\nT0O5SALzeXEf0u/utBlljyIe6z8qd21xtoMIkuLHu81HV8oORd3X7J61/38nIHHD\n2hhnvsbl7HyDFcwztcvLeaMZ58ppIZaF/vykU4ECgYBUqX3Ouuy9hGsdOieZQ+dJ\nM3HJ4evehLS6svJUFTXJKNJDQGNUz/HeT+4fP1bHM7th861pBxDYp7riLnrZtEPb\nwiJ4ZlwVSFi0asYRHnzrpklrMaP+BiZzmDzhrPlhSHABzSPTL8AcYbgUmgx4xAII\nPmL3lsYcypCP41hAJqHytg==\n-----END PRIVATE KEY-----\n",
+  "client_email": "alex-testing@banded-access-168201.iam.gserviceaccount.com",
+  "client_id": "106483596174079436951",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://accounts.google.com/o/oauth2/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/alex-testing%40banded-access-168201.iam.gserviceaccount.com"
+}
