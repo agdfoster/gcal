@@ -26,6 +26,7 @@ CLIENT_SECRET_FILE = 'client_secret.json'
 APPLICATION_NAME = 'Google Calendar API Python Quickstart'
 
 
+
 def get_credentials():
     """Gets valid user credentials from storage.
 
@@ -55,5 +56,14 @@ def get_credentials():
     return credentials
 #
 
+def get_service():
+    credentials = get_credentials()
+    http = credentials.authorize(httplib2.Http())
+    service = discovery.build('calendar', 'v3', http=http)
+    return service
+#
+
+# create service cursor fur use across files
+service = get_service()
 
 
